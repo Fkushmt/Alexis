@@ -20,6 +20,41 @@
   transform: translate(-50%, -50%);
   text-align: center;
         }
+        .heart {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #66afff; /* blue */
+  transform: rotate(-45deg);
+  animation: float 2s ease-in-out infinite;
+  margin: 50px auto;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #66afff;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -25px;
+  left: 0;
+}
+
+.heart::after {
+  left: 25px;
+  top: 0;
+}
+
+@keyframes float {
+  0% { transform: rotate(-45deg) translateY(0); }
+  50% { transform: rotate(-45deg) translateY(-10px); }
+  100% { transform: rotate(-45deg) translateY(0); }
+}
         body {
             background-color: #aad3fe; 
              margin: 0;
@@ -126,7 +161,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   }
     </style> 
 <!--shapes-->
@@ -147,5 +181,6 @@
 <!--text-->
 <div class="center">Hi, baby! ʚ(｡˃ ᵕ ˂ )ɞ <br>this is my <em>first</em> time<br> making a website ꒰ᐢ. .ᐢ꒱₊˚⊹ <br>
 I'm sorry this doesn't look <strong>THAT</strong> cute <br> because I can't add images (╥﹏╥) which <br> <em><strong><mark style="background-color: #6eb1d6;">SUCKS!!</mark></strong></em> <small>anyways,</small> <strong>I LOVE YOU 💙</strong></div>
+<div class="heart"></div>
 </body>
 </html>
