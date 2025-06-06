@@ -13,7 +13,9 @@
             text-shadow: 1px 1px #6eb1d6;
         }
         body {
-            background-color: #aad3fe;
+            background-color: #aad3fe; 
+             margin: 0;
+      justify-content: center;
             }
             .cloud-container {
       width: 300px;
@@ -24,13 +26,77 @@
       margin: 50px auto;
       margin-top: 0px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
     .star-blue {
-        size: 20;
-        transition: transform 0.3s ease;
-        cursor: pointer;
+      width: 70px;
+      height: 70px;
+      background: rgb(229, 239, 188);
+      clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+      );
+      position: absolute;
+      top: 140px;
+      right: 590px;
     }
     .star-blue:hover {
+        transform: scale(1.1);
+    }
+    .star-two {
+         width: 70px;
+      height: 70px;
+      background: rgb(229, 239, 188);
+      clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+      );
+      position: absolute;
+      top: 100px;
+      left: 590px;
+    }
+    .star-two:hover {
+        transform: scale(1.1);
+    }
+    .star-three {
+         width: 70px;
+      height: 70px;
+      background: rgb(229, 239, 188);
+      clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+      );
+      position: absolute;
+      top: 215px;
+      right: 730px;
+    }
+    .star-three:hover {
         transform: scale(1.1);
     }
     </style> 
@@ -44,7 +110,9 @@
                  C0.95,0.97, 0.87,1.02, 0.8,0.98 C0.75,1.07, 0.6,1.05, 0.55,0.95 
                  C0.5,1.03, 0.35,1.02, 0.3,0.95 C0.25,1.02, 0.1,1.02, 0.05,0.95 
                  C-0.02,0.9, -0.02,0.75, 0.05,0.7 C-0.03,0.65, 0,0.4, 0.05,0.3 Z"/>
-<div class="cloud-container"</div>
-    <div img class="star-blue" src="https://www.rawpixel.com/image/15168500/png-cute-blue-star-button" alt="blue star-blue"
+<div class="cloud-container"></div>
+     <div class="star-blue"></div>
+     <div class="star-two"></div>
+     <div class="star-three"></div>
     </body>
-</html>
+</html> 
