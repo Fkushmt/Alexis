@@ -30,8 +30,13 @@
       background-size: contain;
       background-position: center;
     }
-    .star-blue {
-      width: 70px;
+
+.star1 {
+  top: 210px;
+  left: 750px;
+   position: absolute;
+  color: #f5ffc0;
+   width: 70px;
       height: 70px;
       background: rgb(229, 239, 188);
       clip-path: polygon(
@@ -46,15 +51,14 @@
         2% 35%, 
         39% 35%
       );
-      position: absolute;
-      top: 140px;
-      right: 590px;
-    }
-    .star-blue:hover {
-        transform: scale(1.1);
-    }
-    .star-two {
-         width: 70px;
+}
+
+.star2 {
+  top: 17.5%;
+  right: 590px;
+   position: absolute;
+  color: #f5ffc0;
+   width: 70px;
       height: 70px;
       background: rgb(229, 239, 188);
       clip-path: polygon(
@@ -69,15 +73,14 @@
         2% 35%, 
         39% 35%
       );
-      position: absolute;
-      top: 100px;
-      left: 590px;
-    }
-    .star-two:hover {
-        transform: scale(1.1);
-    }
-    .star-three {
-         width: 70px;
+}
+
+.star3 {
+  bottom: 590px;
+  left: 590px;
+   position: absolute;
+  color: #f5ffc0;
+   width: 70px;
       height: 70px;
       background: rgb(229, 239, 188);
       clip-path: polygon(
@@ -92,13 +95,24 @@
         2% 35%, 
         39% 35%
       );
-      position: absolute;
-      top: 215px;
-      right: 730px;
-    }
-    .star-three:hover {
-        transform: scale(1.1);
-    }
+}
+@media (max-width: 600px) {
+  .cloud-wrapper {
+    width: 80vw;
+  }
+  .star1 {
+    top: 5%;
+    left: -5%;
+  }
+  .star2 {
+    top: 10%;
+    right: -5%;
+  }
+  .star3 {
+    bottom: -8%;
+    left: 35%;
+  }
+}
     </style> 
     <svg width="0" height="0">
     <defs>
@@ -111,8 +125,8 @@
                  C0.5,1.03, 0.35,1.02, 0.3,0.95 C0.25,1.02, 0.1,1.02, 0.05,0.95 
                  C-0.02,0.9, -0.02,0.75, 0.05,0.7 C-0.03,0.65, 0,0.4, 0.05,0.3 Z"/>
 <div class="cloud-container"></div>
-     <div class="star-blue"></div>
-     <div class="star-two"></div>
-     <div class="star-three"></div>
+<div class="star1"></div>
+<div class="star2"></div>
+<div class="star3"></div>
     </body>
 </html> 
