@@ -1,30 +1,41 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <body>
     <title>For My ALexis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <h1 style="color:white; font-weight: normal; font-style: normal;">This website is for you, <em>My Love.</em></h1>
+    <div><h1 style="color:white; font-weight: normal; font-style: normal;">This website is for you, <em>My Love.</em></h1></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .square {
-            height: 1000px;
-            width: 1000px;
-            background-color: white;
-        }
-        @font-face {
-            font-family: 'Source Code Pro';
-            src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-        }
-        body {
-            background-color: #aad3fe;
-            font-family: 'Simple Diary', sans-serif;
-        }
         h1 {
             text-align: center;
             letter-spacing: 2px;
             text-shadow: 1px 1px #6eb1d6;
         }
+        body {
+            background-color: #aad3fe;
+            }
+            .cloud-container {
+      width: 600px;
+      height: 350px;
+      background: white;
+      clip-path: url(#cloudPath);
+      -webkit-clip-path: url(#cloudPath);
+      margin: 50px auto;
+      margin-top: 0px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
     </style> 
+    <svg width="0" height="0">
+    <defs>
+      <clipPath id="cloudPath" clipPathUnits="objectBoundingBox">
+        <path d="M0.05,0.3 C0.01,0.2, 0.02,0.05, 0.12,0.02 C0.17,-0.02, 0.27,0.05, 0.3,0.1 
+                 C0.35,0, 0.5,-0.05, 0.55,0.1 C0.6,0, 0.75,0.02, 0.77,0.1 
+                 C0.82,0.02, 0.93,0.02, 0.97,0.1 C1.02,0.15, 0.98,0.3, 0.95,0.35 
+                 C1.05,0.4, 1.05,0.6, 0.95,0.65 C1.03,0.7, 1,0.88, 0.9,0.9 
+                 C0.95,0.97, 0.87,1.02, 0.8,0.98 C0.75,1.07, 0.6,1.05, 0.55,0.95 
+                 C0.5,1.03, 0.35,1.02, 0.3,0.95 C0.25,1.02, 0.1,1.02, 0.05,0.95 
+                 C-0.02,0.9, -0.02,0.75, 0.05,0.7 C-0.03,0.65, 0,0.4, 0.05,0.3 Z"/>
+<div class="cloud-container"</div>
     </body>
 </html>
