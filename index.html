@@ -20,40 +20,32 @@
   transform: translate(-50%, -50%);
   text-align: center;
         }
-        .heart {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  background: #66afff; /* blue */
-  transform: rotate(-45deg);
-  animation: float 2s ease-in-out infinite;
-  margin: 50px auto;
-}
-
-.heart::before,
-.heart::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #66afff;
-  border-radius: 50%;
-}
-
-.heart::before {
-  top: -25px;
-  left: 0;
-}
-
-.heart::after {
-  left: 25px;
-  top: 0;
-}
-
-@keyframes float {
-  0% { transform: rotate(-45deg) translateY(0); }
-  50% { transform: rotate(-45deg) translateY(-10px); }
-  100% { transform: rotate(-45deg) translateY(0); }
+         .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.3rem 0.6rem;
+      background-color: #aad3fe;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+    }
+    .tag-cloud a:hover {
+      background-color: #ffe6eb;
+    }
+    .footer {
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
         body {
             background-color: #aad3fe; 
@@ -73,29 +65,6 @@
       background-size: contain;
       background-position: center;
     }
-
-.star1 {
-  top: 210px;
-  left: 750px;
-   position: absolute;
-  color: #4598ec;
-   width: 70px;
-      height: 70px;
-      background: rgb(229, 239, 188);
-      clip-path: polygon(
-        50% 0%, 
-        61% 35%, 
-        98% 35%, 
-        68% 57%, 
-        79% 91%, 
-        50% 70%, 
-        21% 91%, 
-        32% 57%, 
-        2% 35%, 
-        39% 35%
-      );
-}
-
 .star2 {
   top: 17.5%;
   right: 590px;
@@ -143,10 +112,6 @@
   .cloud-wrapper {
     width: 80vw;
   }
-  .star1 {
-    top: 150px;
-    left: 25px;
-  }
   .star2 {
     top: 135px;
     right: 20px;
@@ -162,6 +127,33 @@
   transform: translate(-50%, -50%);
   text-align: center;
   }
+  .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.3rem 0.6rem;
+      background-color: #aad3fe;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+    }
+    .tag-cloud a:hover {
+      background-color: #ffe6eb;
+    }
+     .footer {
+  background-color: #ffffff;
+  color: rgb(170, 230, 255);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+     }
     </style> 
 <!--shapes-->
     <svg width="0" height="0">
@@ -182,5 +174,12 @@
 <div class="center">Hi, baby! ʚ(｡˃ ᵕ ˂ )ɞ <br>this is my <em>first</em> time<br> making a website ꒰ᐢ. .ᐢ꒱₊˚⊹ <br>
 I'm sorry this doesn't look <strong>THAT</strong> cute <br> because I can't add images (╥﹏╥) which <br> <em><strong><mark style="background-color: #6eb1d6;">SUCKS!!</mark></strong></em> <small>anyways,</small> <strong>I LOVE YOU 💙</strong></div>
 <div class="heart"></div>
+<footer class="footer">
+<div class="tag-cloud">
+      <a href="#">Letters</a>
+      <a href="#">Playlist</a>
+       <a href="#">Birthday</a>
+    </div>
+    </footer>
 </body>
 </html>
