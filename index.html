@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      html {
+      scroll-behavior: smooth;
+      }
         h1 {
             text-align: center;
             letter-spacing: 2px;
@@ -108,6 +111,48 @@
         39% 35%
       );
 }
+.card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 0.8rem 0 0.2rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+}
+ .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+ }
+ .playlist {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .playlist h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    .playlist audio {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
 @media (max-width: 600px) {
   .cloud-wrapper {
     width: 80vw;
@@ -154,6 +199,48 @@
   padding: 1rem;
   margin-top: 2rem;
      }
+     .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 0.8rem 0 0.2rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+     .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+     }
+     .playlist {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .playlist h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    .playlist audio {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
     </style> 
 <!--shapes-->
     <svg width="0" height="0">
@@ -174,12 +261,22 @@
 <div class="center">Hi, baby! ʚ(｡˃ ᵕ ˂ )ɞ <br>this is my <em>first</em> time<br> making a website ꒰ᐢ. .ᐢ꒱₊˚⊹ <br>
 I'm sorry this doesn't look <strong>THAT</strong> cute <br> because I can't add images (╥﹏╥) which <br> <em><strong><mark style="background-color: #6eb1d6;">SUCKS!!</mark></strong></em> <small>anyways,</small> <strong>I LOVE YOU 💙</strong></div>
 <div class="heart"></div>
-<footer class="footer">
+ <footer class="footer">
     <div class="tag-cloud">
-      <a href="https://example.com/ceramics" target="_blank">Letters</a>
-      <a href="https://example.com/handmade" target="_blank">Playlist</a>
-      <a href="https://example.com/portugal" target="_blank">Birthday</a>
+      <a href="#letters">Letters</a>
+      <a href="#playlist">Playlist</a>
+      <a href="#birthday">Birthday</a>
     </div>
   </footer>
+
+ <section id="playlist" class="playlist">
+    <h3>4 u.</h3>
+    <p>Songs that reminds me of <em><strong>you.</strong></em></p>
+    <audio controls>
+      <source src="https://docs.google.com/uc?export=download&id=1iRc8Dm5k4DYusdlwo8A1oWjeXFOKGJgT" type="audio/mpeg">
+    </audio>
+    </section>
+
+
 </body>
 </html>
